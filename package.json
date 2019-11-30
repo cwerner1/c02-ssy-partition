@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "monitor": "nodemon ./bin/www",
+    "client": "nodemon ./bin/client.js",
     "debug": "node %NODE_DEBUG_OPTION% ./bin/www",
     "debuglinux": "node $NODE_DEBUG_OPTION ./bin/www"
   },
