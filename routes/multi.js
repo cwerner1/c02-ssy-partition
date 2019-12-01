@@ -9,6 +9,9 @@ function getRouter(shard_nr) {
 
 
     function getItem(req, res) {
+        let collection = database.getCollection('multi-' + shard_nr);
+        let item = collection.findOne({key: req.params.id});
+        res.json(item);
     }
 
 
